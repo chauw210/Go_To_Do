@@ -1,75 +1,66 @@
-.mylogo {
-    width: 60px;
-    margin:0px;
-    float:none;
-    padding:top -6px;
-    height: var(--wordmark-height);
+/*style.css*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main {
+    background-color: #fffdfd;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #0e647b;
+}
+
+label {
     display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
     box-sizing: border-box;
-}
-
-.body{
-    background-color:rgb(252, 243, 244) ;
-}
-
-.container {
-    position: relative;
-    height: 10%;
-}
-
-.my-heading{
-
-    position:padding left 20px;
-
-}
-
-.topline{
-
-    background-color: rgb(55, 1, 1);
-    color:rgb(255, 255, 255);
-    border:none;
-    height: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: .25rem.6875rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    word-break: break-word;
-    position: absolute;
-       
-   
-    left:600px;  /* Shift right */
-    top: 10px ;
-    
-    margin-left: 0px;
-    margin-top: 5px;
-    min-height: 30px;
-    font-size: var(--typography-sans-100-medium-font-size);
-    line-height: var(--typography-sans-100-medium-line-height);
-
 }
 
-
-.topline2{
-    background-color: rgb(55, 1, 1);
-    color:rgb(255, 255, 255);
-    border:none;
-    height: 20px;
-    border-radius: 5px; 
-
- padding: .25rem.6875rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    word-break: break-word;
-       
-   
-    left:600px;  /* Shift right */
-    top: 0px ;
-    margin-top: 5px;
-    min-height: 30px;
-    font-size: var(--typography-sans-100-medium-font-size);
-    line-height: var(--typography-sans-100-medium-line-height);
-
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #127671;
+    width: 100%;
+    font-size: 16px;
 }
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
