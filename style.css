@@ -1,19 +1,82 @@
-.mylogo {
-    width: 60px;
-    margin:0px;
-    
-    float:none;
-    padding:top -6px;
-    height: var(--wordmark-height);
-    display: block;
-    box-sizing: border-box;
-    margin-left: 3px;
-   margin-top: 15px;
+/*TEXT BOX PART, THE UPPER PART*/
 
+.mylogo {
+    width: 55px;
+    position:sticky;
+    
+    margin-left: -1190px;
+    margin-top: -2.5px;
+    top: 0;
+   
 }
+
+
+.text-box{
+
+    background-color: rgb(0, 0, 0);
+   
+    border:none;
+    height: 50px;
+    width: 1258px;
+    border-radius: 0px;
+    padding: .25rem.6875rem;
+    position: static;
+
+
+    margin-top: -61px;
+    
+    
+    word-break: break-word;
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    align-items: flex-start;
+
+    gap: 25px; /* Adjust the gap as needed */
+}
+
+.loginbutton{
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: -1 10px;
+    height: 30px;
+    
+    box-sizing: border-box
+    justify-content center; 
+    align-items :center;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-weight: var(--typography-sans-200-medium-font-weight);
+    font-size: var(--typography-sans-150-regular-font-size);
+    cursor: pointer;
+    border-radius: 5px;
+    
+   
+}
+
+
+
 
 .body{
     background-color:rgb(255, 255, 255) ;
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXA0dWJzanJ6aXF2cmZmZ28xdzQ2cWg0dGljNmZ1NGIwdDl1emFmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WSBcKoSD7RG3xBRHea/giphy.webp");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y:200px;
+
+
+    
+    margin:0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    
+   
+
+    
 }
   
 
@@ -24,93 +87,151 @@
 
 
 
-.topline{
-
-    background-color: rgb(0, 0, 0);
-   
-    border:none;
-    height: 30px;
-    border-radius: 0px;
-    padding: .25rem.6875rem;
-
-    margin-top: -60px;
-    margin-left: -6px;
-    margin-right: -6px;
     
-    word-break: break-word;
-    display: flex;
-    justify-content: flex-end; /* Aligns buttons to the right */
-    align-items: flex-start;
+    
 
-    gap: 25px; /* Adjust the gap as needed */
-    }
+    .my-heading{
 
-    .topline2{
-        background-color: rgb(203, 138, 165);
-   
-        border:none;
-        height: 10px;
-        border-radius: 0px;
-        display: flex;
-        justify-content: flex-end; /* Aligns buttons to the right */
-        align-items: flex-start;
-        margin-top:12px;
-        margin-left: -6px;
-        margin-right: -6px;
+        font-size: 80px;
+
        
-
-
     }
 
 
     
     
 
-.loginbutton{
+
+
+.todome {
     display: flex;
-    padding: -1 10px;
-    height: 30px;
-    line-height: 31px;
-    box-sizing: border-box
-    justify-content center; 
-    align-items :center;
-    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 3rem;
+    height: 50%;
+    width: 60%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+    max-width: 30rem;
+    
+  }
+
+  h2 {
+    text-transform: uppercase;
+    height: 50px;
+    color: var(--dark);
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .input {
+    position: relative;
+    display: flex;
+  }
+
+  .input-field {
+    width: 100%;
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+
+  input[type="text"]::placeholder {
+    color: var(--grey);
+  }
+
+
+  .todome-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1.3rem;
+  }
+
+  #todoList p {
+    display: flex;
+    gap: 1rem;
+    color: var(--dark);
+    align-items: center;
+  }
+
+  #todoList .disabled {
+    color: #8f98a8;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid var(--grey-border);
+    border-radius: 50%;
+    color: transparent;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    color: var(--white);
+    background-color: var(--green);
+    border: 0.06rem solid var(--green);
+    border-radius: 50%;
+  }
+
+  .counter {
+    border: 0.06rem solid var(--grey-light);
+  }
+  
+  .counter-container {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey);
+  }
+  
+  .counter-container p {
+    align-self: center;
+  }
+  
+  .counter-container button {
     border: none;
-    font-weight: var(--typography-sans-200-medium-font-weight);
-    font-size: var(--typography-sans-150-regular-font-size);
-    cursor: pointer;
-
-}
-.signupbutton{
-    display: flex;
-    padding: -1 10px;
-    height: 30px;
-    line-height: 31px;
-    box-sizing: border-box
-    justify-content  center; 
-    align-items :center;
-    background-color: rgb(255, 255, 255);
-    border: none;  font-weight: var(--typography-sans-200-medium-font-weight);
-    font-size: var(--typography-sans-150-regular-font-size);
-    cursor: pointer;
+    background-color: transparent;
+    color: var(--grey);
+    font-size: 1rem;
+  }
 
 
 
-}
+  
+
+  
 
 
-.calendersticker{
 
-    width: 80px
-}
-.girlsticker{
-    width: 80px
 
-}
 
-.my-heading{
 
-    position:padding left 20px;
-    margin-top: 60px;
 
-}
+
+
+
